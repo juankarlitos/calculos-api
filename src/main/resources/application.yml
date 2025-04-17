@@ -1,0 +1,36 @@
+spring:
+  application:
+    name: calculos-porcentajes-dinamicos
+
+  datasource:
+    url: ${SPRING_DATASOURCE_URL}
+    username: ${SPRING_DATASOURCE_USERNAME}
+    password: ${SPRING_DATASOURCE_PASSWORD}
+    driver-class-name: org.postgresql.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+  cache:
+    cache-names: percentage
+    type: caffeine
+    caffeine:
+      spec: maximumSize=100,expireAfterWrite=30m
+
+  logging:
+    level:
+      org:
+        springframework:
+          web: DEBUG
+        springdoc: DEBUG
+
+springdoc:
+  api-docs:
+    enabled: true
+  swagger-ui:
+    enabled: true
+
+server:
+  port: 8097
