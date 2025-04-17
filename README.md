@@ -19,7 +19,7 @@ También guarda un historial de llamadas en una base de datos PostgreSQL.
 
 ### 1. Clonar el repositorio
 
-git clone https://github.com/TU_USUARIO/TU_REPOSITORIO.git
+git clone https://github.com/juankarlitos/calculos-api.git
 cd TU_REPOSITORIO
 
 ### 2. Compilar la aplicación (sin tests)
