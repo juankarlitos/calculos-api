@@ -10,7 +10,6 @@ import io.swagger.v3.oas.annotations.tags.Tag;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-
 import java.util.List;
 
 @RestController
@@ -28,7 +27,6 @@ public class CalculationController {
         CalculationResponse response = calculationService.calculateWithPercentage(request);
         return ResponseEntity.ok(response);
     }
-
     @Operation(summary = "Suma con porcentaje dinámico")
     @GetMapping("/historial")
     public ResponseEntity<List<CallHistory>> getHistory() {

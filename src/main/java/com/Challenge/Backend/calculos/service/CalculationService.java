@@ -29,7 +29,6 @@ public class CalculationService {
             historyService.saveCall(endpoint, params, String.valueOf(resultado), true);
             return new CalculationResponse(resultado);
 
-
         } catch (Exception e) {
             historyService.saveCall(endpoint, params, e.getMessage(), false);
             throw new RuntimeException("Error en cálculo: " + e.getMessage());

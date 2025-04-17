@@ -11,5 +11,4 @@ public class CalculosPorcentajesDinamicosApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(CalculosPorcentajesDinamicosApplication.class, args);
 	}
-
 }

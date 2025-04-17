@@ -1,6 +1,5 @@
 package com.Challenge.Backend.calculos.service;
 
-
 import com.Challenge.Backend.calculos.constants.CacheNames;
 import com.Challenge.Backend.calculos.exception.ExternalServiceUnavailableException;
 import lombok.RequiredArgsConstructor;
@@ -15,8 +14,6 @@ import org.springframework.web.client.RestTemplate;
 public class PercentageService {
 
     private final RestTemplate restTemplate;
-
-   // public static final String CACHE_PORCENTAJE = "porcentaje";
 
     @Cacheable(CacheNames.PORCENTAJE)
     public double getPorcentage() {

@@ -6,7 +6,6 @@ import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.scheduling.annotation.Async;
 import org.springframework.stereotype.Service;
-
 import java.time.LocalDateTime;
 
 @Slf4j
@@ -25,7 +24,6 @@ public class HistoryService {
             call.setParameters(parameters);
             call.setResponse(response);
             call.setSuccess(success);
-
             repository.save(call);
             log.info("Historial guardado correctamente");
         } catch (Exception e) {

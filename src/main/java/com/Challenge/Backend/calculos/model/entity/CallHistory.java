@@ -2,7 +2,6 @@ package com.Challenge.Backend.calculos.model.entity;
 
 import jakarta.persistence.*;
 import lombok.Data;
-
 import java.time.LocalDateTime;
 
 @Entity
